@@ -1,6 +1,6 @@
 # *in construction*
 ## Virtual Forests Intelectual Output #2
-### [Marchine learning (ML) materials (Lab handouts) ](https://github.com/Felipe-Bravo/BIP-NatureConservation_AI.git)
+### Open Educational Resources for the International Learning locations
 prepared by Felipe Bravo [iuFOR](https://iufor.uva.es/) - [University of Valladolid](https://universityofvalladolid.uva.es/)
 with support from MSc Doan Thi Nhat Minh, [Vietnam National University-University of Science](http://english.hus.vnu.edu.vn/)
 Data provided by Dr. Nguyen Dinh Hung  [Forest Inventory and Planning Institute] (http://fipi.vn/)
