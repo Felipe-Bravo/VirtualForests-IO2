@@ -2,7 +2,7 @@
 ## Virtual Forests Intelectual Output #2
 ### Open Educational Resources for the International non-European Learning locations
 prepared by Felipe Bravo [iuFOR](https://iufor.uva.es/) - [University of Valladolid](https://universityofvalladolid.uva.es/)
-with support from MSc Doan Thi Nhat Minh, [Vietnam National University-University of Science](http://english.hus.vnu.edu.vn/)
+with support from Doan Thi Nhat Minh, [Vietnam National University-University of Science](http://english.hus.vnu.edu.vn/)
 Data provided by Dr. Nguyen Dinh Hung  [Forest Inventory and Planning Institute] (http://fipi.vn/)
 
 
