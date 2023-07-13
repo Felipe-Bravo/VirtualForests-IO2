@@ -4,6 +4,7 @@
 ### 2. Obtaining ground data
 ### 3. Distances to the nearest trees
 ### 4. Define the mixture degree for the area surrounding each target tree
+### 5. Fit a model to check if mixture degree impact on tree sizes
 ---------------------
 
 
