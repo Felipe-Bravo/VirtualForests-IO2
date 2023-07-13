@@ -22,4 +22,9 @@ Forest function: Protection forest.
 Geo-location: Latitude  20° 57' 27.72'' N; Longitude 105° 7' 8.8788'' E
 Province: Phu Tho
 Main forest status: Medium secondary evergreen broadleaved forest on soil mountain (standing timber volume ranging from 100 to 200 m3/ha)
-Forest manager: Thuong Cuu Commune People's Committee.
+Location: Thuong Cuu Commune
+
+In the following image you can see where the available plots are located in Vietnam
+
+<img src="https://github.com/Felipe-Bravo/VirtualForests-IO2/blob/master/images/Map_3SubPSP.png" style="display: block; margin: auto;" />
+Plots location in Northern Vietnam (prepared by Doan Thi Nhat Minh)
