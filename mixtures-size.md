@@ -97,7 +97,7 @@ Brown, S., Gillespie, A. J. R., & Lugo, A. E. (1989). Biomass Estimation Methods
 
 Dang, T. T. H., Do, H. T., Trinh, M. Q., Nguyen, H. M., Bui, T. T. X., & Nguyen, T. D. (2018). Allometric relations between biomass and diameter at breast height and height of tree in natural forests at Me Linh Station for Biodiversity, Vinh Phuc Province, Vietnam. Journal of Vietnamese Environment, 9(5), 264–271. [https://doi.org/10.13141/jve.vol9.no5.pp264-271](https://doi.org/10.13141/jve.vol9.no5.pp264-271)
 
-Nguyễn, Đ. H., Lê, T. G., Đào, N. T., Phạm, T. H., Phạm, T. L., Nguyễn, T. K., & Hà, M. T. (2012). PART B-2: Tree allometric equations in Evergreen broadleaf and Bamboo forests in the North East region, Viet Nam. In UN -REDD Programme Vietnam (Issue October) [document available at this UN-REDD link](https://www.un-redd.org/sites/default/files/2021-10/Part%20B-2%20Tree%20allometric%20equations%20in%20Evergreen%20broadleaf%20and%20Bamboo%20forests%20in%20the%20North%20East%20region%2C%20Viet%20Nam.pdf]
+Nguyễn, Đ. H., Lê, T. G., Đào, N. T., Phạm, T. H., Phạm, T. L., Nguyễn, T. K., & Hà, M. T. (2012). PART B-2: Tree allometric equations in Evergreen broadleaf and Bamboo forests in the North East region, Viet Nam. In UN -REDD Programme Vietnam (Issue October) [document available at this UN-REDD link](https://www.un-redd.org/sites/default/files/2021-10/Part%20B-2%20Tree%20allometric%20equations%20in%20Evergreen%20broadleaf%20and%20Bamboo%20forests%20in%20the%20North%20East%20region%2C%20Viet%20Nam.pdf)
 
 
 
