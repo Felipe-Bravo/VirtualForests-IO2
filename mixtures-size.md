@@ -2,8 +2,8 @@
 ## Pipeline
 ### 1. Preparatory actions
 ### 2. Obtaining ground data
-### 3. Importing remote sensing data from Earth Explorer
-
+### 3. Distances to the nearest trees
+### 4. Define the mixture degree for the area surrounding each target tree
 ---------------------
 
 
@@ -99,10 +99,93 @@ Dang, T. T. H., Do, H. T., Trinh, M. Q., Nguyen, H. M., Bui, T. T. X., & Nguyen,
 
 Nguyễn, Đ. H., Lê, T. G., Đào, N. T., Phạm, T. H., Phạm, T. L., Nguyễn, T. K., & Hà, M. T. (2012). PART B-2: Tree allometric equations in Evergreen broadleaf and Bamboo forests in the North East region, Viet Nam. In UN -REDD Programme Vietnam (Issue October) [document available at this UN-REDD link](https://www.un-redd.org/sites/default/files/2021-10/Part%20B-2%20Tree%20allometric%20equations%20in%20Evergreen%20broadleaf%20and%20Bamboo%20forests%20in%20the%20North%20East%20region%2C%20Viet%20Nam.pdf)
 
+### Distances to the nearest trees
+Once we have the dataset loaded we will proceed to calculate the distance between each tree and its three nearest neighbours in the plot.
 
 
+```{r, setup, include=FALSE}
+# calculating the distance to the nearest trees
 
+dist.m<-data.frame()
 
+nvecinos<-3 # defining the number of neighbours
 
+# starting the loop
+for (i in 1:nrow(datos.m)){
+  distij <- ((datos.m$Long[i]-datos.m$Long)^2+(datos.m$Lat[i]-datos.m$Lat)^2)^(1/2) 
+  # obtaining the distance from tree i (our target) to every tree
+  
+  
+  # now we identify the tree i and its neighbours and order it from closest to 
+  # farthest distance to our target tree
+  temp<-data.frame(arbol=datos.m$ID[i],vecino=datos.m$ID,
+                   sp.arbol=datos.m$Species_sci[i],sp.vecino=datos.m$Species_sci,
+                   dbh.arbol=datos.m$DBH_cm[i],dbh.vecino=datos.m$DBH_cm,
+                   H.arbol=datos.m$Ht_m[i],H.vecino=datos.m$Ht_m,
+                   distij)
+  temp<-temp[order(distij),]
+  
+  # delete the first raw because is our target tree i (closest one to tree i)
+  temp<-temp[-1,]
+  vecinos<-temp[1:nvecinos,]  # select the nvecinos trees closest to tree i
+  
+  dist.m <- rbind(dist.m,vecinos) # now joint the result with our original
+} 
+# close the loop
 
+head(dist.m)  # to finish this part we check the new structure of our dataset
+```
+### Define the mixture degree for the area surrounding each target tree
 
+Now we'll proceed to define the degree of mixture around each tree considering only the three nearest neibourgh (see above)
+
+```{r, setup, include=FALSE}
+# Define the mixture variable for each tree, 0 if the species is the same, 1 otherwise
+
+dist.m$Vij <- ifelse ((dist.m$sp.arbol==dist.m$sp.vecino), 0, 1)
+write.csv(dist.m,file="dist_m.csv") # write the outcome in the working directory
+head (dist.m) # check if everything is ok
+
+# we calculate the mingling index for each target tree for the nearest neighbours
+nfilas =seq(1,length(dist.m[,1]), by=nvecinos)
+resultado=c()
+# for each different tree
+for (i in nfilas){
+  vectordindices = c()
+  # keep the mingling index value for each target tree
+  for (j in seq(0,nvecinos-1)){
+    vectordindices=c(vectordindices, dist.m$Vij[i+j])
+  }
+  # calculate the average of the mingling index for each tree and store it
+  indiceagregadoi = mean(vectordindices)
+  resultado=c(resultado,rep(indiceagregadoi,nvecinos))
+}
+# add the mingling indext to our data
+resultado <-as.matrix(resultado)
+colnames(resultado)<-"Mi"
+dist.m=cbind(dist.m,resultado)
+head(dist.m) # check if everything is ok
+
+new <- dist.m[nfilas,] 
+names (new) # check the order of the columns
+
+mixture <- new [,c(1,3,5,7,9,11)] #select the columns with the i tree information
+
+# check if everything is ok
+names(mixture)
+head(mixture)
+tail(mixture)
+```
+
+### Fit a model to check if mixture degree impact on tree sizes
+
+To insight on the impact of the mixture degree on size, we'll fit a linear model where the independent variable is tree diameter and the explanatory variable is the degree of mixture (Mi)
+
+```{r, setup, include=FALSE}
+linear.model <- lm(mixture$dbh.arbol ~ mixture$Mi)
+summary(linear.model)
+AIC(linear.model)
+```
+The outcome shows that the mixture (Mi) has a slight negative impact on tree diameter.
+Now it is your time, explore diferent models (with different explanatory variables, different variable transformation ...) and rank them by using the Akaike Information Criterion (AIC)
+This strategy is called model selection and you can get additional information at this model selection paper [https://doi.org/10.1016/j.tree.2003.10.013](https://doi.org/10.1016/j.tree.2003.10.013)
