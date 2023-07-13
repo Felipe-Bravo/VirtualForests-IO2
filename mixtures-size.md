@@ -91,9 +91,12 @@ AGB=e^(-3.1141+0.9719×ln⁡(DBH^2×H) )	Adj. R2: 0.97	MSE: 0.1161		(Brown et al
 where AGB is Above ground biomass (kg); H is Total height (m); DBH is Diameter at breast height (cm)
 Expected value of error (%) is the error (in percentage) of the predicted total AGB as compared to the measured total AGB of a set of trees.
 
-Equations were obtained from 
+Equations were obtained from
+
 Brown, S., Gillespie, A. J. R., & Lugo, A. E. (1989). Biomass Estimation Methods for Tropical Forests with Applications to Forest Inventory Data. Forest Science, 35(4), 881–902 [https://doi.org/10.1093/forestscience/35.4.881](https://doi.org/10.1093/forestscience/35.4.881)
+
 Dang, T. T. H., Do, H. T., Trinh, M. Q., Nguyen, H. M., Bui, T. T. X., & Nguyen, T. D. (2018). Allometric relations between biomass and diameter at breast height and height of tree in natural forests at Me Linh Station for Biodiversity, Vinh Phuc Province, Vietnam. Journal of Vietnamese Environment, 9(5), 264–271. [https://doi.org/10.13141/jve.vol9.no5.pp264-271](https://doi.org/10.13141/jve.vol9.no5.pp264-271)
+
 Nguyễn, Đ. H., Lê, T. G., Đào, N. T., Phạm, T. H., Phạm, T. L., Nguyễn, T. K., & Hà, M. T. (2012). PART B-2: Tree allometric equations in Evergreen broadleaf and Bamboo forests in the North East region, Viet Nam. In UN -REDD Programme Vietnam (Issue October)[https://www.un-redd.org/sites/default/files/2021-10/Part%20B-2%20Tree%20allometric%20equations%20in%20Evergreen%20broadleaf%20and%20Bamboo%20forests%20in%20the%20North%20East%20region%2C%20Viet%20Nam.pdf](https://www.un-redd.org/sites/default/files/2021-10/Part%20B-2%20Tree%20allometric%20equations%20in%20Evergreen%20broadleaf%20and%20Bamboo%20forests%20in%20the%20North%20East%20region%2C%20Viet%20Nam.pdf]
 
 
