@@ -6,7 +6,7 @@
 ### 4. Define the mixture degree for the area surrounding each target tree
 ### 5. Fit a model to check if mixture degree impact on tree sizes
 ---------------------
-
+The objective of this lab is to insight on the impact on tree admixture on tree size in evergreen subtropical forests in Vietnam. Database from northern Vietnam has been provided by FIPI and the script was originally developed by Irene Ruano from University of Valladolid.
 
 ### Preparatory actions
 The first step is to define a working directory for your work. Normally, I have a folder in the root directory where I create inside a subfolder for each project.
