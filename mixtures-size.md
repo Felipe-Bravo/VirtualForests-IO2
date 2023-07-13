@@ -25,11 +25,11 @@ options(digits=6) # number of digits to print on output
 options(OutDec=".") # use dot as decimal separator
 ```
 ### Obtaining data from our working directory
-We'll use data from the National Forest Inventory of Vietnam. You can get detailed information at this documente in this
-repository [Alberdi et al, 2021](https://pfb.cnpf.embrapa.br/pfb/index.php/pfb/article/view/1337/580) In the following image you can see where the plot is located in Vietnam
+We'll use data from the National Forest Inventory of Vietnam. You can get detailed information about this dataset at this [link](https://github.com/Felipe-Bravo/VirtualForests-IO2/blob/master/EvergreenBroadleave_northernVietnam-dataDescription.md)
+In the following image you can see where the plot is located in Vietnam
 
 <img src="https://github.com/Felipe-Bravo/VirtualForests-IO2/blob/master/images/Map_3SubPSP.png" style="display: block; margin: auto;" />
-Plots location in Northern Vietnam (prepared by Doqan Thi Nhat Minh)
+Plots location in Northern Vietnam (prepared by Doan Thi Nhat Minh)
 
 After loading the dataset we should check the basic features to detect any inconsistence.
 ```{r, setup, include=FALSE}
