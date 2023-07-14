@@ -1,0 +1,6 @@
+# Mapping Avicennia alba distribution
+
+*Avicennia alba* Blume (synonym of *Avicennia marina* (Forssk.) Vierh) is one of the species we can found in Mangroves in Vietnam. 
+We will use data from the Global Biodiversity Information Facility (GBIF) that can be retrieved from [the GBIF site](https://www.gbif.org/)
+by using the R libraries **dismo** that deals with species distribution modeling and **maptools** that provides maps. 
+As usual, we'll start defining our working directory and loading (and installing if needed) the required libraries.
