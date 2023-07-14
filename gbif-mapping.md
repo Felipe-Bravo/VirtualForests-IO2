@@ -47,5 +47,5 @@ points(Mam.trang$lon, Mam.trang$lat, col='red' , pch=20, cex=0.75)
 We should obtain this map with the Avicennia alba observations in red.
 
 ![images](https://github.com/Felipe-Bravo/VirtualForests-IO2/blob/master/images/Avicenia-alba.jpeg)
-<img src="https://github.com/Felipe-Bravo/VirtualForests-IO2/blob/master/images/Avicenia-alba.jpeg" style="display: block; margin: auto;" />
+
 
