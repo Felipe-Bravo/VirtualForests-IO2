@@ -8,7 +8,7 @@ This intellectual ouput has been prepared through the Erasmus+ project VirtualFo
 
 This repository includes the lab instructions and the datasets to complete the assignments. Users have to install [R](https://cran.r-project.org/) and [RStudio](https://cran.r-project.org/)
 
-These materials have used by the author during regular master quantitative forestry courses at [University of Valladolid](http://www.uva.es), 2022-2023
+These materials have used by the author during regular master quantitative forestry courses at [University of Valladolid](http://www.uva.es), 2022-2023 and 2023-2024
 
 
 ### Reference texts
