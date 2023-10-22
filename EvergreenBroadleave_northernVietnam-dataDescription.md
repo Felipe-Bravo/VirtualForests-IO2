@@ -1,4 +1,4 @@
-# Nothern Vietnam secondary evergreen broadleaved forest dataset
+# Northern Vietnam secondary evergreen broadleaved forest dataset
 
 Three plots from the Vietnamese national forest inventory datasets are included in this repository to serve as example.
 The main characteristics of these datasets are the following:
